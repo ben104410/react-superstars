@@ -1,0 +1,53 @@
+
+import React from 'react';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import EventCard from '../components/EventCard';
+
+const events = [
+  {
+    title: 'Superstars Talent Night',
+    date: 'August 15, 2025',
+    description: 'A night full of performances, music, and club awards.',
+    location: 'Main Auditorium',
+  },
+  {
+    title: 'Leadership Bootcamp',
+    date: 'September 10, 2025',
+    description: 'Empowering members with leadership skills and team building.',
+    location: 'Club House Grounds',
+  },
+  {
+    title: 'Community Outreach Drive',
+    date: 'October 5, 2025',
+    description: 'Giving back to the community through volunteer work and donations.',
+    location: 'Local Community Center',
+  },
+];
+
+const EventsPage = () => {
+  return (
+    <div className="font-sans bg-gray-50 min-h-screen flex flex-col">
+      <Navbar />
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-6xl mx-auto text-center">
+          <h1 className="text-4xl font-bold text-gray-800 mb-10">Upcoming Events</h1>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            {events.map((event, index) => (
+              <EventCard
+                key={index}
+                title={event.title}
+                date={event.date}
+                description={event.description}
+                location={event.location}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+      <Footer />
+    </div>
+  );
+};
+
+export default EventsPage;
