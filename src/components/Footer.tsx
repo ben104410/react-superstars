@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text- black-100">
+    <footer className="bg-gray-800 text-black-100">
       <div className="max-w-6xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
           <div className="space-y-4">
@@ -15,11 +15,13 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li><Link to="/" className="text-blue-400 hover:text-red transition-colors">Home</Link></li>
-              <li><Link to="/members" className=" text-blue-400 hover:text-white transition-colors">Members</Link></li>
-              <li><Link to="/events" className="text-blue-400 hover:text-white transition-colors">Events</Link></li>
               <li><Link to="/about" className="text-blue-400 hover:text-white transition-colors">About Us</Link></li>
+              <li><Link to="/members" className="text-blue-400 hover:text-white transition-colors">Members</Link></li>
+              <li><Link to="/events" className="text-blue-400 hover:text-white transition-colors">Events</Link></li>
+              <li><Link to="/Gallery" className="text-blue-400 hover:text-white transition-colors">Gallery</Link></li>
               <li><Link to="/contact" className="text-blue-400 hover:text-white transition-colors">Contact</Link></li>
-             
+              <li><Link to="/join-us" className="text-blue-400 hover:text-white transition-colors">Join Us</Link></li>
+              <li><Link to="/fixtures-results" className="text-blue-400 hover:text-white transition-colors">Fixtures & Results</Link></li>
             </ul>
           </div>
           <div>

@@ -1,6 +1,7 @@
+
 import FixturesAndResults from "../components/FixturesAndResults";
 
-function FixturesAndResultsPage() {
+const FixturesAndResultsPage = () => {
   return (
     <div className="min-h-screen bg-gray-100 py-8">
       <h1 className="text-3xl font-bold text-center text-indigo-800 mb-8">
@@ -9,6 +10,6 @@ function FixturesAndResultsPage() {
       <FixturesAndResults />
     </div>
   );
-}
+};
 
 export default FixturesAndResultsPage;
